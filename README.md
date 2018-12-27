@@ -5,10 +5,12 @@ PICDIV - PIC based 10MHz to 1PPS divider/counter, from http://www.leapsecond.com
 
 ```
 sudo apt install gputils
+mkdir build
 gpasm ./src/pd03.asm -I ./src -o ./build/pd03.hex
 diff ./build/pd03.hex ./hex/pd03.hex
-
 ```
+The last step checks for differences between the newly built hex-file and the hex-file available from leapsecond.com.
+There should be no differences.
 
 ## Variants
 
