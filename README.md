@@ -1,7 +1,13 @@
 # PICDIV
-PICDIV - PIC based 10MHz to 1PPS divider/counter, from http://www.leapsecond.com/pic/picdiv.htm
+PICDIV - Microchip PIC microcontroller based 10MHz to 1PPS divider/counter, from http://www.leapsecond.com/pic/picdiv.htm
+
+Use e.g. PIC12F675 https://ww1.microchip.com/downloads/en/devicedoc/41190c.pdf
+
+Takes frequency input, e.g. 10 MHz, as clock-source for the PIC, and produces programmable, e.g. 1PPS, output that is accurately phase-coherenent with the input clock.
 
 ## Build
+
+On Ubuntu, or Debian-like Linux, compiling the .ASM assembler-sources into a HEX-file that can be written to the PIC can be done with:
 
 ```
 sudo apt install gputils
@@ -11,6 +17,10 @@ diff ./build/pd03.hex ./hex/pd03.hex
 ```
 The last step checks for differences between the newly built hex-file and the hex-file available from leapsecond.com.
 There should be no differences.
+
+## Programming
+
+This section should describe programming the PIC using the HEX file and an ICSP-tool.
 
 ## Variants
 
