@@ -2,8 +2,9 @@
 PICDIV - Microchip PIC microcontroller based 10MHz to 1PPS divider/counter, from http://www.leapsecond.com/pic/picdiv.htm
 
 Use e.g. PIC12F675 https://ww1.microchip.com/downloads/en/devicedoc/41190c.pdf
+An example board is e.g. https://github.com/aewallin/PICDIV_Board_v3
 
-Takes frequency input, e.g. 10 MHz, as clock-source for the PIC, and produces programmable, e.g. 1PPS, output that is accurately phase-coherenent with the input clock.
+Takes frequency input, e.g. 10 MHz, as clock-source for the PIC, and produces a frequency divided output, e.g. 1PPS, that is accurately phase-coherenent with the input clock.
 
 ## Build
 
