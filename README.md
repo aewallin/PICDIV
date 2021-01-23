@@ -6,6 +6,8 @@ An example board is e.g. https://github.com/aewallin/PICDIV_Board_v3
 
 Takes frequency input, e.g. 10 MHz, as clock-source for the PIC, and produces a frequency divided output, e.g. 1PPS, that is accurately phase-coherenent with the input clock.
 
+Example PCB-design with sine-to-square converter, SYNC input, blinking LED, and two buffered 1PPS outputs: https://github.com/aewallin/PICDIV_Board_v3
+
 ## Build
 
 On Ubuntu, or Debian-like Linux, compiling the .ASM assembler-sources into a HEX-file that can be written to the PIC can be done with:
